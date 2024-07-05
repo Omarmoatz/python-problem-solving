@@ -14,7 +14,7 @@ class Bank(User):
         super().__init__(name,age,address)
         self.balance = 0
 
-    def deposite(self, amount):
+    def deposit(self, amount):
         self.balance += amount
         print(f'you deposited : {amount}')        
         print(f'you balance after deposite : {self.balance}')        
@@ -37,9 +37,16 @@ class Bank(User):
 
 
 
-bank = Bank('omar', 22, 'negeer')
-print(bank.deposite(1000))
-print(bank.deposite(1000))
-print(bank.withdraw(200))
-print(bank.withdraw(2200))
-print(bank.show_details())
+# bank = Bank('omar', 22, 'negeer')
+# print(bank.deposit(1000))
+# print(bank.deposit(1000))
+# print(bank.withdraw(200))
+# print(bank.withdraw(2200))
+# print(bank.show_details())
+
+if __name__ == "__main__":
+    account = Bank("omar", 22, "negeer")
+    account.deposit(1000)
+    account.deposit(1000)
+    account.withdraw(200)
+    account.show_details()
