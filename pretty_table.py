@@ -15,7 +15,9 @@ teams = [
 # def sorted_teams(teams):
 #     return teams[3]
 
-teams.sort(key= lambda teams: teams[3] , reverse=True)
+teams.append(['Omar Madred', 21, 21, 52])
+
+teams.sort(key= lambda team: team[3] , reverse=True)
 
 for index, team in enumerate(teams):
     team.insert(0, index+1)

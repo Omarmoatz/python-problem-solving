@@ -34,9 +34,9 @@ del letters[0]
 
 numbers = [2, 8, 4, 1, 0, 6, 10]
 
-print(sorted(numbers,reverse=True)) # create new list and put sorted values in it
+# print(sorted(numbers,reverse=True)) # create new list and put sorted values in it
 numbers.sort(reverse=True)
-print(numbers)
+# print(numbers)
 
 # ------------------
 teams = [
@@ -51,9 +51,21 @@ def teamsfunc(teams):
     return teams[1]
 
 teams.sort(key=teamsfunc, reverse=True)
-print(teams)
+# print(teams)
 
 
+items = [
+    ('item2', 10),
+    ('item1', 50),
+    ('item5', 80),
+    ('item3', 40),
+    ('item4', 35)
+]
 
+points = list(map( lambda item: item[1], items))
+print(points)
+
+filtered = list(filter( lambda item: item[1] <= 40, items))
+print(filtered)
 
 
