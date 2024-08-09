@@ -53,7 +53,8 @@ def teamsfunc(teams):
 teams.sort(key=teamsfunc, reverse=True)
 # print(teams)
 
-
+# ------------------------------------------------------------
+# ___map , filter___
 items = [
     ('item2', 10),
     ('item1', 50),
@@ -63,9 +64,18 @@ items = [
 ]
 
 points = list(map( lambda item: item[1], items))
-print(points)
+# print(points)
 
 filtered = list(filter( lambda item: item[1] <= 40, items))
-print(filtered)
+# print(filtered)
 
 
+# ------------------------------------------------------------
+# ___zip___
+
+list1 = [1, 2, 3, 4]
+list2 = ['a', 'omar', 'ahmad', 'd']
+list3 = ['g', 'f', 'e', 'c']
+
+lists = list(zip( list1, list2, list3))
+# print(lists)
