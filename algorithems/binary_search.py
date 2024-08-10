@@ -1,5 +1,5 @@
 # Binary Search: we will asume that we will search about a number in list of numbers
-#                   - Time complexity = log2 n
+#                   - Time complexity = log2 n  --> O(log2 n)
 #                   - the list must be sorted
 from array import array
 
