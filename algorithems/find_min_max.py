@@ -1,8 +1,6 @@
 from array import array
 
 
-nums = array('i', [ 23, 99, 34, 567, 47, 234, 57, 61, 12, 77, 86, 1, 90])
-
 def find_min_value(nums):
     min_value = nums[0]
     min_index = 0
@@ -26,6 +24,8 @@ def find_max_value(nums):
 
     return print(f'max value is: {max_value} and its index is: {max_index}') 
 
+
+nums = array('i', [ 23, 99, 34, 567, 47, 234, 57, 61, 12, 77, 86, 1, 90])
 
 find_min_value(nums)
 find_max_value(nums)

@@ -4,8 +4,6 @@
 from array import array
 
 
-nums = array('i', [ 23, 99, 34, 567, 47, 234, 57, 61, 12, 77, 86, 90])
-
 def binary_search(nums, value):
     # Convert array to a list, sort it, and convert back to an array
     sorted_nums = array(nums.typecode, sorted(nums))
@@ -27,5 +25,6 @@ def binary_search(nums, value):
             end = mid - 1
 
 
+nums = array('i', [ 23, 99, 34, 567, 47, 234, 57, 61, 12, 77, 86, 90])
 
 print(binary_search(nums, 567))
